@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title('การต้นสอบเขียนเว็บด้วย Python')
+st.title('ตวรจสอบคุณสมบัติการขอสินเชื่อบ้าน')
 st.header('นางสาวชุติมา สุขสมัย')
 st.subheader('สาขาวิชาวิทยากรข้อมูล')
 st.markdown('---')
@@ -10,8 +10,7 @@ col1, col2 =st.columns(2)
 #col2.write("This is column 2")
 with col1:
     st.image('./pic/chu.jpg')
-with col2:
-    st.image('./pic/iris.jpg')
+
 
 html_1="""
 <div style="background-color:#73C6B6 ;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
