@@ -87,9 +87,10 @@ if st.button("ทำนายผล"):
  
  #  st.write(X.head(3))
  #  st.write(X.shape)
+ 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
-   Knn_model.fit(X, y)
-        #ข้อมูลสำหรับการจำแนกข้อมูล
+   Knn_model.fit(X,y)
+    #ข้อมูลสำหรับการจำแนกข้อมูล
 
    x_input = np.array([[Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term]])
         #เอา input ไปทดสอบ
