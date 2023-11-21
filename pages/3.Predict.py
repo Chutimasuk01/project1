@@ -37,7 +37,7 @@ dt9 = dt['Loan_Amount_Term'].sum()
 dt10 = dt['Credit_History'].sum()
 
 dx = [dt1, dt2, dt3, dt4,dt5,dt6,dt7,dt8,dt9,dt10]
-dx2 = pd.DataFrame(dx, index=["d1", "d2", "d3", "d4", "d5", "d6", "d7", "d8", "d9", "d10"])
+dx2 = pd.DataFrame(dx, index=["dt1", "dt2", "dt3", "dt4", "dt5", "dt6", "dt7", "dt8", "dt9", "dt10"])
 
 if st.button("show bar chart"):
     st.bar_chart(dx2)
