@@ -53,7 +53,7 @@ html_2 = """
 st.markdown(html_2, unsafe_allow_html=True)
 st.markdown("")
 
-Gender = st.botton_input("กรุณาเลือกข้อมูล Gender")
+Gender = st.text_input("กรุณาเลือกข้อมูล Gender")
 Married = st.text_input("กรุณาเลือกข้อมูล Married")
 Dependents = st.number_input("กรุณาเลือกข้อมูล Dependents")
 Education = st.text_input("กรุณาเลือกข้อมูล Education")
