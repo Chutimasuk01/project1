@@ -107,3 +107,29 @@ if st.button("ทำนายผล"):
    st.button("ไม่ทำนาย")
 else:
    st.button("ไม่ทำนาย")
+
+
+
+if st.button("test"):
+    X = dt.drop('Credit_History', axis=1) #เลือกคอลัมที่เอามาทำงาน
+    y = dt.Credit_History   #คอลัมคำตอบ
+
+    x_input = np.array([[Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term]])
+
+    Knn_model = KNeighborsClassifier(n_neighbors=3)
+    Knn_model.fit(X,y)
+    x_input = np.array([[Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term]])
+        #เอา input ไปทดสอบ
+    st.write(x_input)
+    st.write(Knn_model.predict(x_input))
+    out=Knn_model.predict(x_input)  #ผลลัพธ์
+
+    if out[0]=="0":
+      #st.image("./pic/iris.jpg")
+      st.header("No")
+    else:
+      #st.image("./pic/iris3.jpg")  
+      st.header("Yes")
+    st.button("ไม่ทำนาย")
+else:
+    st.button("ไม่ทำนาย")
