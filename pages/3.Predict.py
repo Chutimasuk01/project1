@@ -52,8 +52,6 @@ html_2 = """
 """
 st.markdown(html_2, unsafe_allow_html=True)
 st.markdown("")
-#ptlen = st.slider("กรุณาเลือกข้อมูล petal.length",0,10)
-#ptwd = st.slider("กรุณาเลือกข้อมูล petal.width",0,10)
 
 Gender = st.text_input("กรุณาเลือกข้อมูล Gender")
 Married= st.text_input("กรุณาเลือกข้อมูล Married")
@@ -73,7 +71,8 @@ if st.button("ทำนายผล"):
    #dt = pd.read_csv("./data/iris.csv")  
    X = dt.drop('variety', axis=1) #เลือกคอลัมที่เอามาทำงาน
    y = dt.variety   #คอลัมคำตอบ
-
+   st.button("ไม่ทำนาย")
+   
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)
         #ข้อมูลสำหรับการจำแนกข้อมูล
@@ -82,15 +81,17 @@ if st.button("ทำนายผล"):
    st.write(Knn_model.predict(x_input))
    out=Knn_model.predict(x_input)  #ผลลัพธ์
 
-   if out[0]=="Setosa":
+   x_input = np.array([[Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term]])
+        #เอา input ไปทดสอบ
+   st.write(Knn_model.predict(x_input))
+   out=Knn_model.predict(x_input)  #ผลลัพธ์
+
+   if out[0]=="0":
       #st.image("./pic/iris.jpg")
-      st.header("Setosa")
-   elif out[0]=="Versicolor":
-      #st.image("./pic/iris2.jpg")
-      st.header("Versicolor")
+      st.header("No")
    else:
       #st.image("./pic/iris3.jpg")  
-      st.header("Verginiga")
+      st.header("Yes")
    st.button("ไม่ทำนาย")
 else:
    st.button("ไม่ทำนาย")
