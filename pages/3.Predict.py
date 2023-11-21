@@ -56,11 +56,11 @@ st.markdown("")
 import numpy as np
 import pandas as pd
 
-Gender = st.text_input("กรุณาเลือกข้อมูล Gender")
-Married = st.text_input("กรุณาเลือกข้อมูล Married")
+Gender = st.number_input("กรุณาเลือกข้อมูล Gender")
+Married = st.number_input("กรุณาเลือกข้อมูล Married")
 Dependents = st.number_input("กรุณาเลือกข้อมูล Dependents")
-Education = st.text_input("กรุณาเลือกข้อมูล Education")
-Self_Employed = st.text_input("กรุณาเลือกข้อมูล elf_Employed")
+Education = st.number_input("กรุณาเลือกข้อมูล Education")
+Self_Employed = st.number_input("กรุณาเลือกข้อมูล elf_Employed")
 ApplicantIncome = st.number_input("กรุณาเลือกข้อมูล ApplicantIncome")
 CoapplicantIncome = st.number_input("กรุณาเลือกข้อมูล CoapplicantIncome")
 LoanAmount = st.number_input("กรุณาเลือกข้อมูล LoanAmount")
