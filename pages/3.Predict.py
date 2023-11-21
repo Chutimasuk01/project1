@@ -60,7 +60,7 @@ Gender = st.number_input("กรุณาเลือกข้อมูล Gende
 Married = st.number_input("กรุณาเลือกข้อมูล Married")
 Dependents = st.number_input("กรุณาเลือกข้อมูล Dependents")
 Education = st.number_input("กรุณาเลือกข้อมูล Education")
-Self_Employed = st.number_input("กรุณาเลือกข้อมูล elf_Employed")
+Self_Employed = st.number_input("กรุณาเลือกข้อมูล Self_Employed")
 ApplicantIncome = st.number_input("กรุณาเลือกข้อมูล ApplicantIncome")
 CoapplicantIncome = st.number_input("กรุณาเลือกข้อมูล CoapplicantIncome")
 LoanAmount = st.number_input("กรุณาเลือกข้อมูล LoanAmount")
@@ -89,10 +89,6 @@ if st.button("ทำนายผล"):
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)
         #ข้อมูลสำหรับการจำแนกข้อมูล
-   x_input = np.array([[ptlen, ptwd, splen, spwd]])
-        #เอา input ไปทดสอบ
-   st.write(Knn_model.predict(x_input))
-   out=Knn_model.predict(x_input)  #ผลลัพธ์
 
    x_input = np.array([[Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term]])
         #เอา input ไปทดสอบ
