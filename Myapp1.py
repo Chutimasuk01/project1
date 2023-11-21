@@ -70,27 +70,24 @@ import numpy as np
 
 if st.button("ทำนายผล"):
     #ทำนาย
-   #dt = pd.read_csv("./data/iris.csv")  
-   X = dt.drop('variety', axis=1) #เลือกคอลัมที่เอามาทำงาน
-   y = dt.variety   #คอลัมคำตอบ
+   #dt = pd.read_csv("data/Root1.csv")  
+   X = dt.drop('Credit_History', axis=1) #เลือกคอลัมที่เอามาทำงาน
+   y = dt.Credit_History   #คอลัมคำตอบ
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)
         #ข้อมูลสำหรับการจำแนกข้อมูล
-   x_input = np.array([[ptlen, ptwd, splen, spwd]])
+   x_input = np.array([[Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term]])
         #เอา input ไปทดสอบ
    st.write(Knn_model.predict(x_input))
    out=Knn_model.predict(x_input)  #ผลลัพธ์
 
-   if out[0]=="Setosa":
+   if out[0]=="0":
       #st.image("./pic/iris.jpg")
-      st.header("Setosa")
-   elif out[0]=="Versicolor":
-      #st.image("./pic/iris2.jpg")
-      st.header("Versicolor")
+      st.header("No")
    else:
       #st.image("./pic/iris3.jpg")  
-      st.header("Verginiga")
+      st.header("Yes")
    st.button("ไม่ทำนาย")
 else:
    st.button("ไม่ทำนาย")
