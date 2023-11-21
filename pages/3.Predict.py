@@ -84,7 +84,7 @@ if st.button("ทำนายผล"):
 
    X = dt.drop('Credit_History', axis=1) #เลือกคอลัมที่เอามาทำงาน
    y = dt.Credit_History   #คอลัมคำตอบ
-   st.button("ไม่ทำนาย")
+ 
    st.write(X.head(3))
    st.write(X.shape)
    #Knn_model = KNeighborsClassifier(n_neighbors=3)
