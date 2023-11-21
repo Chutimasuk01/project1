@@ -131,5 +131,3 @@ if st.button("test"):
       #st.image("./pic/iris3.jpg")  
       st.header("Yes")
     st.button("ไม่ทำนาย")
-else:
-    st.button("ไม่ทำนาย")
