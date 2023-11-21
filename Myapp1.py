@@ -57,13 +57,13 @@ st.markdown("")
 
 Gender = st.text_input("กรุณาเลือกข้อมูล Gender")
 Married= st.text_input("กรุณาเลือกข้อมูล Married")
-Dependents=st.num_input("กรุณาเลือกข้อมูล Dependents")
+Dependents=st.number_input("กรุณาเลือกข้อมูล Dependents")
 Education= st.text_input("กรุณาเลือกข้อมูล Education")
 Self_Employed= st.text_input("กรุณาเลือกข้อมูล elf_Employed")
-ApplicantIncome= st.num_input("กรุณาเลือกข้อมูล ApplicantIncome")
-CoapplicantIncome= st.num_input("กรุณาเลือกข้อมูล CoapplicantIncome")
-LoanAmount= st.num_input("กรุณาเลือกข้อมูล LoanAmount")
-Loan_Amount_Term= st.num_input("กรุณาเลือกข้อมูล Loan_Amount_Term")
+ApplicantIncome= st.number_input("กรุณาเลือกข้อมูล ApplicantIncome")
+CoapplicantIncome= st.number_input("กรุณาเลือกข้อมูล CoapplicantIncome")
+LoanAmount= st.number_input("กรุณาเลือกข้อมูล LoanAmount")
+Loan_Amount_Term= st.number_input("กรุณาเลือกข้อมูล Loan_Amount_Term")
 
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
