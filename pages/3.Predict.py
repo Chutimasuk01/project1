@@ -56,16 +56,6 @@ st.markdown("")
 import numpy as np
 import pandas as pd
 
-rGender=np.sqrt(Gender)
-rMarried=np.sqrt(Married)
-rDependents=np.sqrt(Dependents)
-rEducation=np.sqrt(Education)
-rSelf_Employed=np.sqrt(Self_Employed)
-rApplicantIncome=np.sqrt(ApplicantIncome)
-rCoapplicantIncome=np.sqrt(CoapplicantIncome)
-rLoanAmount=np.sqrt(LoanAmount)
-rLoan_Amount_Term=np.sqrt(Loan_Amount_Term)
-
 Gender = st.text_input("กรุณาเลือกข้อมูล Gender")
 Married = st.text_input("กรุณาเลือกข้อมูล Married")
 Dependents = st.number_input("กรุณาเลือกข้อมูล Dependents")
@@ -76,6 +66,15 @@ CoapplicantIncome = st.number_input("กรุณาเลือกข้อม�
 LoanAmount = st.number_input("กรุณาเลือกข้อมูล LoanAmount")
 Loan_Amount_Term = st.number_input("กรุณาเลือกข้อมูล Loan_Amount_Term")
 
+rGender=np.sqrt(Gender)
+rMarried=np.sqrt(Married)
+rDependents=np.sqrt(Dependents)
+rEducation=np.sqrt(Education)
+rSelf_Employed=np.sqrt(Self_Employed)
+rApplicantIncome=np.sqrt(ApplicantIncome)
+rCoapplicantIncome=np.sqrt(CoapplicantIncome)
+rLoanAmount=np.sqrt(LoanAmount)
+rLoan_Amount_Term=np.sqrt(Loan_Amount_Term)
 
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
