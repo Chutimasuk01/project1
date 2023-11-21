@@ -25,4 +25,3 @@ if st.button("Welcome"):
         time.sleep(5)
     st.balloons()
     
-    lottie.host
