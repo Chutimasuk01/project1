@@ -95,17 +95,17 @@ if st.button("ทำนายผล"):
    x_input = np.array([[rGender,rMarried,rDependents,rEducation,rSelf_Employed,rApplicantIncome,rCoapplicantIncome,rLoanAmount,rLoan_Amount_Term]])
         #เอา input ไปทดสอบ
    #st.write(x_input)
-   st.write(Knn_model.predict(x_input))
-   out=Knn_model.predict(x_input)  #ผลลัพธ์
+   #st.write(Knn_model.predict(x_input))
+   #out=Knn_model.predict(x_input)  #ผลลัพธ์
 
-   if out[0]=="0":
+   #if out[0]=="0":
       #st.image("./pic/iris.jpg")
-      st.header("No")
-   elif out[0]=="1":
+      #st.header("No")
+   #elif out[0]=="1":
       #st.image("./pic/iris3.jpg")  
-      st.header("Yes")
-   st.button("ไม่ทำนาย")
-else:
-   st.button("ไม่ทำนาย")
+     # st.header("Yes")
+   #st.button("ไม่ทำนาย")
+#else:
+   #st.button("ไม่ทำนาย")
 
-st.header("yo")
+#st.header("yo")
