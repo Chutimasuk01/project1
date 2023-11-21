@@ -73,7 +73,8 @@ if st.button("ทำนายผล"):
    #dt = pd.read_csv("data/Root1.csv")  
    X = dt.drop('Credit_History', axis=1) #เลือกคอลัมที่เอามาทำงาน
    y = dt.Credit_History   #คอลัมคำตอบ
-
+   st.button("ไม่ทำนาย")
+   
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)
         #ข้อมูลสำหรับการจำแนกข้อมูล
