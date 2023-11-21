@@ -57,7 +57,7 @@ st.markdown("")
 
 Gender = st.text_input("กรุณาเลือกข้อมูล Gender")
 Married= st.text_input("กรุณาเลือกข้อมูล Married")
-Dependents=st.number_input("กรุณาเลือกข้อมูล Dependents")
+Dependents= st.number_input("กรุณาเลือกข้อมูล Dependents")
 Education= st.text_input("กรุณาเลือกข้อมูล Education")
 Self_Employed= st.text_input("กรุณาเลือกข้อมูล elf_Employed")
 ApplicantIncome= st.number_input("กรุณาเลือกข้อมูล ApplicantIncome")
