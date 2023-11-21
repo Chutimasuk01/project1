@@ -112,7 +112,7 @@ else:
 
 if st.button("test"):
     a = dt.drop('Credit_History', axis=1) #เลือกคอลัมที่เอามาทำงาน
-    s = dt.Credit_History   #คอลัมคำตอบ
+    s = dt["Credit_History"]   #คอลัมคำตอบ
 
     x_input = np.array([[Gender,Married,Dependents,Education,Self_Employed,ApplicantIncome,CoapplicantIncome,LoanAmount,Loan_Amount_Term]])
 
