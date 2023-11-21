@@ -54,23 +54,23 @@ st.markdown(html_2, unsafe_allow_html=True)
 st.markdown("")
 
 Gender = st.botton_input("กรุณาเลือกข้อมูล Gender")
-Married= st.text_input("กรุณาเลือกข้อมูล Married")
-Dependents= st.number_input("กรุณาเลือกข้อมูล Dependents")
-Education= st.text_input("กรุณาเลือกข้อมูล Education")
-Self_Employed= st.text_input("กรุณาเลือกข้อมูล elf_Employed")
-ApplicantIncome= st.number_input("กรุณาเลือกข้อมูล ApplicantIncome")
-CoapplicantIncome= st.number_input("กรุณาเลือกข้อมูล CoapplicantIncome")
-LoanAmount= st.number_input("กรุณาเลือกข้อมูล LoanAmount")
-Loan_Amount_Term= st.number_input("กรุณาเลือกข้อมูล Loan_Amount_Term")
+Married = st.text_input("กรุณาเลือกข้อมูล Married")
+Dependents = st.number_input("กรุณาเลือกข้อมูล Dependents")
+Education = st.text_input("กรุณาเลือกข้อมูล Education")
+Self_Employed = st.text_input("กรุณาเลือกข้อมูล elf_Employed")
+ApplicantIncome = st.number_input("กรุณาเลือกข้อมูล ApplicantIncome")
+CoapplicantIncome = st.number_input("กรุณาเลือกข้อมูล CoapplicantIncome")
+LoanAmount = st.number_input("กรุณาเลือกข้อมูล LoanAmount")
+Loan_Amount_Term = st.number_input("กรุณาเลือกข้อมูล Loan_Amount_Term")
 
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 
 if st.button("ทำนายผล"):
     #ทำนาย
-   #dt = pd.read_csv("./data/iris.csv")  
-   X = dt.drop('variety', axis=1) #เลือกคอลัมที่เอามาทำงาน
-   y = dt.variety   #คอลัมคำตอบ
+
+   X = dt.drop('Credit_History', axis=1) #เลือกคอลัมที่เอามาทำงาน
+   y = dt.Credit_History   #คอลัมคำตอบ
    st.button("ไม่ทำนาย")
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
