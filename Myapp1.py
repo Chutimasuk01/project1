@@ -14,7 +14,7 @@ with col1:
 
 html_1="""
 <div style="background-color:#73C6B6 ;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>สถิติข้อมูลการขอสินเชื่อ</h5></center>
+<center><h5>สถิติข้อมูลการขอสินเชื่อบ้าน</h5></center>
 </div>
 """
 st.markdown(html_1,unsafe_allow_html=True)
@@ -41,7 +41,7 @@ else :
 
 html_2 = """
 <div style="background-color:#FFBF00;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>การทำนาย</h5></center>
+<center><h5>การทำนายการขอสินเชื่อบ้าน</h5></center>
 </div>
 """
 st.markdown(html_2, unsafe_allow_html=True)
