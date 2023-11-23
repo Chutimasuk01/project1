@@ -3,6 +3,11 @@ import time
 import requests
 import streamlit as st
 
+st.set_page_config(
+    page_title="Chutima Datascience Project",
+    page_icon= ":bar_chart:",
+)
+
 st.header("การวิเคราะห์คุณสมบัติการขอสินเชื่อบ้าน")
 st.subheader("ชุติมา สุขสมัย  \t สาขาวิทยาการข้อมูล \t NPRU")
 
