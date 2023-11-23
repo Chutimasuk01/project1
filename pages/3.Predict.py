@@ -90,7 +90,7 @@ if st.button("ทำนายผล"):
  #  st.write(X.head(3))
  #  st.write(X.shape)
  
-   Knn_model = KNeighborsClassifier(n_neighbors=3)
+   Knn_model = KNeighborsClassifier(n_neighbors=7)
    Knn_model.fit(X,y)
 #ข้อมูลสำหรับการจำแนกข้อมูล
 
