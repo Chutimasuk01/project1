@@ -24,7 +24,7 @@ st.markdown("")
 
 import pandas as pd
 
-dt=pd.read_csv('data/Root.1.csv')
+dt=pd.read_csv('data/Root1.csv')
 st.write(dt.head(10))
 
 dt1 = dt['Gender'].sum()
@@ -109,5 +109,3 @@ if st.button("ทำนายผล"):
    st.button("ไม่ทำนาย")
 else:
    st.button("ไม่ทำนาย")
-
-#st.header("yo")
