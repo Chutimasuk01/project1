@@ -107,5 +107,6 @@ if st.button("ทำนายผล"):
       st.image("pic/Y.jpg")  
       st.header("Yes")
    st.button("ไม่ทำนาย")
+
 else:
    st.button("ไม่ทำนาย")
