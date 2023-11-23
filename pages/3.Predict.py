@@ -100,13 +100,14 @@ if st.button("ทำนายผล"):
    st.write(Knn_model.predict(x_input))
    out=Knn_model.predict(x_input)  #ผลลัพธ์
 
-   if out[0]=="0":
-      st.image('pic/N.jpg')
-      st.header("No")
-   elif out[0]=="1":
+   if out[0]=="1":
       st.image("pic/Y.jpg")  
       st.header("Yes")
+   elif out[0]=="0":
+      st.image('pic/N.jpg')
+      st.header("No")
    st.button("ไม่ทำนาย")
 
 else:
    st.button("ไม่ทำนาย")
+
