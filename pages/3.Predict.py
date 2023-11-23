@@ -27,8 +27,6 @@ import pandas as pd
 dt=pd.read_csv('data/Root1.2.csv')
 st.write(dt.head(10))
 
-dt['Dependents'] = pd.to_numeric(dt['Dependents'], errors='coerce')
-
 dt1 = dt['Gender'].sum()
 dt2 = dt['Married'].sum()
 dt3 = dt['Dependents'].sum()
