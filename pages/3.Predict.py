@@ -90,7 +90,7 @@ if st.button("ทำนายผล"):
  #  st.write(X.head(3))
  #  st.write(X.shape)
  
-   Knn_model = KNeighborsClassifier(n_neighbors=7)
+   Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X,y)
 #ข้อมูลสำหรับการจำแนกข้อมูล
 
@@ -101,7 +101,7 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)  #ผลลัพธ์
 
    if out[0]=="0":
-      st.image("pic/N.jpg")
+      st.image('pic/N.jpg')
       st.header("No")
    elif out[0]=="1":
       st.image("pic/Y.jpg")  
