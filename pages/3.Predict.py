@@ -103,7 +103,7 @@ if st.button("ทำนายผล"):
    if out[0]=="0":
       st.image("pic/N.jpg")
       st.header("No")
-   elif out[0]=="1":
+   elif out[1]=="1":
       st.image("pic/Y.jpg")  
       st.header("Yes")
    st.button("ไม่ทำนาย")
