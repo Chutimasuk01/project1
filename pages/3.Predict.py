@@ -24,7 +24,7 @@ st.markdown("")
 
 import pandas as pd
 
-dt=pd.read_csv('data/Root1.csv')
+dt=pd.read_csv('data/Root.1.csv')
 st.write(dt.head(10))
 
 dt1 = dt['Gender'].sum()
