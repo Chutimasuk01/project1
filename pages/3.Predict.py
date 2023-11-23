@@ -96,8 +96,8 @@ if st.button("ทำนายผล"):
 
    x_input = np.array([[rGender,rMarried,rDependents,rEducation,rSelf_Employed,rApplicantIncome,rCoapplicantIncome,rLoanAmount,rLoan_Amount_Term]])
         #เอา input ไปทดสอบ
-   st.write(x_input)
-   st.write(Knn_model.predict(x_input))
+   #st.write(x_input)
+   #st.write(Knn_model.predict(x_input))
    out=Knn_model.predict(x_input)  #ผลลัพธ์
 
    if out[0]=="0":
