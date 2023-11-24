@@ -101,10 +101,18 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)  #ผลลัพธ์
 
    if out[0]=="1":
-      st.image("pic/Y.jpg")  
+      col1, col2 =st.columns(2)
+      with col1:
+         st.image('pic/Y.jpg')
+      with col2:
+         st.image('pic/M.jpgic/002.jpg')
       st.header("Yes")
    elif out[0]=="0":
-      st.image('pic/N.jpg')
+      col1, col2 =st.columns(2)
+      with col1:
+         st.image('pic/N.jpg')
+      with col2:
+          st.image('pic/M.jpg')
       st.header("No")
    else:
       st.image("./pic/N.jpg") 
